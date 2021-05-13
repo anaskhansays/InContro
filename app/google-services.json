@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142604154075",
+    "project_id": "incontrovideocalling",
+    "storage_bucket": "incontrovideocalling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142604154075:android:48d734eb6afaf4f64f48fe",
+        "android_client_info": {
+          "package_name": "com.anaskhansays.incontro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142604154075-msie5e2lroing2obku4kapm2o2h5ehhp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUPcnfXwUDHxpvaP6zo_xF9TcG10aNFqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142604154075-msie5e2lroing2obku4kapm2o2h5ehhp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

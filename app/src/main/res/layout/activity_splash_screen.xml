@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/background_call_invite"
+    tools:context=".activites.SplashScreenActivity">
+
+    <ImageView
+        android:layout_width="@dimen/_42sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:src="@drawable/ic_videocall"
+        app:tint="@color/colorTextIcons"
+        android:layout_marginBottom="@dimen/_4sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textColor="@color/colorTextIcons"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/_22ssp"
+        android:fontFamily="@font/ubuntu_bold"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Highest quality video calling app"
+        android:textColor="@color/colorTextIcons"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/ubuntu_regular"
+        />
+
+</LinearLayout>

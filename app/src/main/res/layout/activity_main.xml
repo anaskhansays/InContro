@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context=".activites.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layoutHeader"
+        android:layout_height="?actionBarSize"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:background="@color/purple_200"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/ubuntu_bold"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/colorBackground"/>
+
+        <TextView
+            android:id="@+id/textSignOut"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/ubuntu_bold"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:text="Sign Out"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="@color/colorBackground"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtConnectMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Connect on Incontro"
+        android:textAllCaps="true"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:textColor="@color/colorPrimarytext"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"/>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipeRefLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtConnectMsg">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/usersList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/_5sdp"
+            android:clipToPadding="false"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+
+    <TextView
+        android:id="@+id/txtErrorMsgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/ubuntu_regular"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/_13ssp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/layoutHeader"/>
+
+        <ImageView
+            android:id="@+id/imageConference"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_conference"
+            app:tint="@color/purple_200"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
