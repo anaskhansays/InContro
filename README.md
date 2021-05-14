@@ -1,6 +1,10 @@
 # InContro
  A video call/meeting or conference Android application
  
+ <b><i>Note:</i></b><i>If you are using this code please use your own firebase project and the google-services.json file. Also replace the server key on <b>key=<YOUR_SERVER_AUTH_KEY_HER> in app/src/main/java/com/anaskhansays/incontro/incontroUtils/Constants.java on line no. 45 </b> </i>
+ 
+ 
+ 
 To implement real-time activity like video meetings we must have some identity or destination link to the receiver. 
 
 For that users will sign up for their account using some basic details like the first name, last name, email, and password. To store all of the user data we will be using the cloud fire store database, which is a flexible and scalable database for mobile, web, and server development from Firebase and Google Cloud Platform.
