@@ -132,3 +132,6 @@ public class MainActivity extends FragmentActivity implements JitsiMeetActivityI
     }
 }
 
+
+<strong>Screenshots</strong>
+<img src="https://raw.githubusercontent.com/anaskhansays/InContro/master/screenshots/incontroapp-sm.png" style="height:300px;"/>
